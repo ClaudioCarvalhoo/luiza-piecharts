@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/luiza-piecharts/static/css/main.3bc66d43.chunk.css",
-    "main.js": "/luiza-piecharts/static/js/main.cef6a59d.chunk.js",
-    "main.js.map": "/luiza-piecharts/static/js/main.cef6a59d.chunk.js.map",
+    "main.js": "/luiza-piecharts/static/js/main.7f40a054.chunk.js",
+    "main.js.map": "/luiza-piecharts/static/js/main.7f40a054.chunk.js.map",
     "runtime-main.js": "/luiza-piecharts/static/js/runtime-main.4d7e341a.js",
     "runtime-main.js.map": "/luiza-piecharts/static/js/runtime-main.4d7e341a.js.map",
     "static/js/2.12b53a61.chunk.js": "/luiza-piecharts/static/js/2.12b53a61.chunk.js",
     "static/js/2.12b53a61.chunk.js.map": "/luiza-piecharts/static/js/2.12b53a61.chunk.js.map",
     "index.html": "/luiza-piecharts/index.html",
-    "precache-manifest.dc4d7323163e39ad88dbf03d2d426548.js": "/luiza-piecharts/precache-manifest.dc4d7323163e39ad88dbf03d2d426548.js",
+    "precache-manifest.3b5982ce42e27fb9fd50fe84db9c1dc9.js": "/luiza-piecharts/precache-manifest.3b5982ce42e27fb9fd50fe84db9c1dc9.js",
     "service-worker.js": "/luiza-piecharts/service-worker.js",
     "static/css/main.3bc66d43.chunk.css.map": "/luiza-piecharts/static/css/main.3bc66d43.chunk.css.map",
     "static/js/2.12b53a61.chunk.js.LICENSE.txt": "/luiza-piecharts/static/js/2.12b53a61.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4d7e341a.js",
     "static/js/2.12b53a61.chunk.js",
     "static/css/main.3bc66d43.chunk.css",
-    "static/js/main.cef6a59d.chunk.js"
+    "static/js/main.7f40a054.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/luiza-piecharts/precache-manifest.dc4d7323163e39ad88dbf03d2d426548.js"
+  "/luiza-piecharts/precache-manifest.3b5982ce42e27fb9fd50fe84db9c1dc9.js"
 );
 
 self.addEventListener('message', (event) => {
