@@ -14,6 +14,7 @@ function App() {
   const [fontSize, setFontSize] = useState(50);
   const [backgroundColor, setBackgroundColor] = useState("white");
   const [font, setFont] = useState("Roboto");
+  const [size, setSize] = useState(500);
 
   return (
     <Box
@@ -22,14 +23,9 @@ function App() {
       flexDirection="column"
       alignItems="center"
       paddingTop="50px"
-      style={{ backgroundColor: backgroundColor }}
+      style={{ backgroundColor: backgroundColor, paddingBottom: "8px" }}
     >
-      <Box
-        width="500px"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-      >
+      <Box display="flex" flexDirection="column" alignItems="center">
         <Typography
           style={{
             fontFamily: font,
@@ -40,7 +36,7 @@ function App() {
         >
           {title}
         </Typography>
-        <Box width="500px" height="500px">
+        <Box width={`${size}px`} height={`${size}px`}>
           <PieChart
             data={[{ value: 1, key: 1, color: color }]}
             reveal={percentage}
@@ -90,7 +86,21 @@ function App() {
           style={{ marginLeft: "20px", marginRight: "20px" }}
         />
         <TextField
-          label="Tamanho da fonte"
+          label="Lado do círculo (px)"
+          type="number"
+          value={size}
+          onChange={(e) => {
+            let val = parseInt(e.target.value);
+            if (Number.isInteger(val)) {
+              setSize(parseInt(val));
+            } else if (e.target.value === "") {
+              setSize(0);
+            }
+          }}
+          style={{ marginLeft: "20px", marginRight: "20px" }}
+        />
+        <TextField
+          label="Tamanho da fonte (px)"
           type="number"
           value={fontSize}
           onChange={(e) => {

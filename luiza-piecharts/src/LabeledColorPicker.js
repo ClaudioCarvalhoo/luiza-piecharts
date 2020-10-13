@@ -16,7 +16,11 @@ export default function LabeledColorPicker({ title, color, setColor }) {
       <ColorPicker
         value={color}
         onChange={(newColor) => {
-          setColor(`#${newColor.hex}`);
+          if (newColor.css) {
+            setColor(newColor.css.backgroundColor);
+          } else {
+            setColor(newColor);
+          }
         }}
       />
     </Box>
