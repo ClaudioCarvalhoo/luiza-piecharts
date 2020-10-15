@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/luiza-piecharts/static/css/main.3bc66d43.chunk.css",
-    "main.js": "/luiza-piecharts/static/js/main.7f40a054.chunk.js",
-    "main.js.map": "/luiza-piecharts/static/js/main.7f40a054.chunk.js.map",
+    "main.js": "/luiza-piecharts/static/js/main.9facf6bf.chunk.js",
+    "main.js.map": "/luiza-piecharts/static/js/main.9facf6bf.chunk.js.map",
     "runtime-main.js": "/luiza-piecharts/static/js/runtime-main.4d7e341a.js",
     "runtime-main.js.map": "/luiza-piecharts/static/js/runtime-main.4d7e341a.js.map",
-    "static/js/2.12b53a61.chunk.js": "/luiza-piecharts/static/js/2.12b53a61.chunk.js",
-    "static/js/2.12b53a61.chunk.js.map": "/luiza-piecharts/static/js/2.12b53a61.chunk.js.map",
+    "static/js/2.00ba8b33.chunk.js": "/luiza-piecharts/static/js/2.00ba8b33.chunk.js",
+    "static/js/2.00ba8b33.chunk.js.map": "/luiza-piecharts/static/js/2.00ba8b33.chunk.js.map",
     "index.html": "/luiza-piecharts/index.html",
-    "precache-manifest.3b5982ce42e27fb9fd50fe84db9c1dc9.js": "/luiza-piecharts/precache-manifest.3b5982ce42e27fb9fd50fe84db9c1dc9.js",
+    "precache-manifest.4e0f6ce7481b41ae8ac8f1f6dbd02fd5.js": "/luiza-piecharts/precache-manifest.4e0f6ce7481b41ae8ac8f1f6dbd02fd5.js",
     "service-worker.js": "/luiza-piecharts/service-worker.js",
     "static/css/main.3bc66d43.chunk.css.map": "/luiza-piecharts/static/css/main.3bc66d43.chunk.css.map",
-    "static/js/2.12b53a61.chunk.js.LICENSE.txt": "/luiza-piecharts/static/js/2.12b53a61.chunk.js.LICENSE.txt"
+    "static/js/2.00ba8b33.chunk.js.LICENSE.txt": "/luiza-piecharts/static/js/2.00ba8b33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d7e341a.js",
-    "static/js/2.12b53a61.chunk.js",
+    "static/js/2.00ba8b33.chunk.js",
     "static/css/main.3bc66d43.chunk.css",
-    "static/js/main.7f40a054.chunk.js"
+    "static/js/main.9facf6bf.chunk.js"
   ]
 }
