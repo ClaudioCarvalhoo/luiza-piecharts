@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Box from "@material-ui/core/Box";
 import { PieChart } from "react-minimal-pie-chart";
-import { TextField, Typography } from "@material-ui/core";
+import {
+  Checkbox,
+  FormControlLabel,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import LabeledColorPicker from "./LabeledColorPicker";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
@@ -15,6 +20,7 @@ function App() {
   const [backgroundColor, setBackgroundColor] = useState("white");
   const [font, setFont] = useState("Roboto");
   const [size, setSize] = useState(500);
+  const [showPercentage, setShowPercentage] = useState(true);
 
   return (
     <Box
@@ -42,7 +48,7 @@ function App() {
             reveal={percentage}
             lineWidth={20}
             startAngle={270}
-            label={() => percentage}
+            label={() => `${percentage}` + (showPercentage ? "%" : "")}
             labelStyle={{
               fontSize: "25px",
               fontFamily: "sans-serif",
@@ -70,7 +76,7 @@ function App() {
           onChange={(e) => {
             let val = parseInt(e.target.value);
             if (Number.isInteger(val)) {
-              setPercentage(parseInt(val));
+              setPercentage(val);
             } else if (e.target.value === "") {
               setPercentage(0);
             }
@@ -118,9 +124,27 @@ function App() {
           onChange={(event, newValue) => {
             setFont(newValue);
           }}
-          options={["Roboto", "Helvetica", "Open Sans", "Lato", "Ubuntu"]}
+          options={[
+            "Roboto",
+            "Helvetica",
+            "Open Sans",
+            "Lato",
+            "Ubuntu",
+            "Sans-Serif",
+          ]}
           renderInput={(params) => <TextField label="Fonte" {...params} />}
           style={{ marginLeft: "20px", marginRight: "20px", width: "179px" }}
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={showPercentage}
+              color="primary"
+              onChange={() => setShowPercentage(!showPercentage)}
+            />
+          }
+          label='Mostrar "%"'
+          labelPlacement="top"
         />
       </Box>
       <Box
